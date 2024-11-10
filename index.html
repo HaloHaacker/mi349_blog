@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Personal Blog</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -18,47 +19,94 @@
     </header>
 
     <main>
-        <article>
-            <h2>Dungeons and Dragons</h2>
-            <p><strong>Published:</strong> <time datetime="2024-10-13">October 13, 2024</time> by Hunter Haack</p>
-            <img src="books.jpg" alt="All the DND Books I own">
-            <p>If you’re looking for an engaging way to spark your creativity and connect with friends, consider diving into Dungeons & Dragons (D&D). This iconic tabletop role-playing game offers a unique blend of storytelling, strategy, and imagination that can transform an ordinary evening into an epic adventure.</p>
-            <p>Getting started is easier than you might think. Gather a group of friends, choose a Dungeon Master (DM) to guide the story, and create your characters. Each character brings something unique to the table, whether it’s a brave warrior, a cunning rogue, or a wise wizard. The beauty of D&D lies in the freedom it provides; you can craft your character's backstory and personality, shaping your journey in unexpected ways.</p>   
-            <p>Don’t worry if you’re new to gaming; many resources are available online, from rulebooks to tutorials. Embrace the process, and remember that the most important part of D&D is to have fun. With every dice roll and dramatic encounter, you’ll find yourself more immersed in a world where anything is possible. So grab some friends, roll the dice, and embark on a fantastical adventure that you won’t soon forget!</p>
-        
-            <table>
-                <caption>Data on rolls of dice and averages</caption>
-                <thead>
-                    <tr>
-                        <th>Item</th>
-                        <th>Description</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>a D20</td>
-                        <td>The average roll for a D20 is 10.5 therefore tecnically rounded to the nearest whole number is 11</td>
-                    </tr>
-                    <tr>
-                        <td>a D6</td>
-                        <td>The average roll for a D6 is 3.5 therefore tecnically rounded to the nearest whole number is 4</td>
-                    </tr>
-                    <tr>
-                        <td>a D12</td>
-                        <td>The average roll for a D6 is 6.5 therefore tecnically rounded to the nearest whole number is 7</td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
+        <div class="content-wrapper">
+            <!-- Two-column layout -->
+            <article class="two-column">
+                <!-- Left column-->
+                <section class="text-column">
+                    <h2>Dungeons and Dragons</h2>
+                    <p><strong>Published:</strong> <time datetime="2024-10-13">October 13, 2024</time> by Hunter Haack</p>
+                    <p>If you’re looking for an engaging way to spark your creativity and connect with friends, consider diving into Dungeons & Dragons (D&D). This iconic tabletop role-playing game offers a unique blend of storytelling, strategy, and imagination that can transform an ordinary evening into an epic adventure.</p>
+                    <p>Getting started is easier than you might think. Gather a group of friends, choose a Dungeon Master (DM) to guide the story, and create your characters. Each character brings something unique to the table, whether it’s a brave warrior, a cunning rogue, or a wise wizard. The beauty of D&D lies in the freedom it provides; you can craft your character's backstory and personality, shaping your journey in unexpected ways.</p>
+                    <p>Don’t worry if you’re new to gaming; many resources are available online, from rulebooks to tutorials. Embrace the process, and remember that the most important part of D&D is to have fun. With every dice roll and dramatic encounter, you’ll find yourself more immersed in a world where anything is possible. So grab some friends, roll the dice, and embark on a fantastical adventure that you won’t soon forget!</p>
+                </section>
+                
+                <!-- Right column for image-->
+                <section class="image-column">
+                    <img src="books.jpg" alt="All the DND Books I own">
+                    <table>
+                        <caption>Data on rolls of dice and averages</caption>
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Description</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>a D20</td>
+                                <td>The average roll for a D20 is 10.5 therefore technically rounded to the nearest whole number is 11</td>
+                            </tr>
+                            <tr>
+                                <td>a D6</td>
+                                <td>The average roll for a D6 is 3.5 therefore technically rounded to the nearest whole number is 4</td>
+                            </tr>
+                            <tr>
+                                <td>a D12</td>
+                                <td>The average roll for a D12 is 6.5 therefore technically rounded to the nearest whole number is 7</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </article>
+
+            <!-- Sticky Sidebar -->
+            <aside class="sticky-sidebar">
+                <h3>Blog Navigation</h3>
+                <ul>
+                    <li><a href="#dnd">Dungeons & Dragons</a></li>
+                    <li><a href="#hockey">Hockey</a></li>
+                    <li><a href="#subscribe">Subscribe</a></li>
+                </ul>
+            </aside>
+        </div>
 
         <article>
-            <h2>Hockey</h2>
+            <h2 id="hockey">Hockey</h2>
             <p><strong>Published:</strong> <time datetime="2024-10-12">October 12, 2024</time> by Hunter Haack</p>
-            <img src="image2.jpg" alt="Description of Image 2">
-            <p>Hockey is more than just a game; it’s a thrilling blend of speed, skill, and strategy that captivates millions around the globe. From the crack of the puck on the stick to the roar of the crowd when a goal is scored, hockey offers an adrenaline rush that few sports can match.</p>
-            <p>Originating in Canada in the 19th century, hockey has grown into a beloved sport with leagues and teams worldwide. The National Hockey League (NHL) showcases the best talent, with players demonstrating incredible agility and teamwork on the ice. Each game is a showcase of athleticism, where players navigate fast-paced plays, execute intricate passes, and showcase breathtaking shots.</p>
-            <p>What makes hockey truly special is its sense of community. Fans rally together, donning their team colors and filling arenas with energy and excitement. The camaraderie extends beyond the rink, as players often form lifelong bonds with teammates and opponents alike.</p>     
-            <p>Whether you’re a seasoned fan or a newcomer, hockey offers something for everyone. From youth leagues to professional games, the sport encourages participation, promotes teamwork, and fosters a passion for competition. So grab your skates, hit the ice, and experience the thrill of hockey firsthand!</p>
+            
+            <!-- Three-column layout for the Hockey post -->
+            <div class="three-column">
+                <!-- Left column -->
+                <section class="left-column">
+                    <h3>Hockey Essentials</h3>
+                    <ul>
+                        <li><a href="https://www.nhl.com/info/video-rulebook" target="_blank">Basic Rules of Hockey</a></li>
+                        <li><a href="https://www.nhl.com/history/nhl-centennial/nhl-100-greatest-players" target="_blank">Famous Hockey Players</a></li>
+                        <li><a href="https://www.nhl.com/standings" target="_blank">NHL Playoffs</a></li>
+                    </ul>
+                </section>
+        
+                <!-- Middle column -->
+                <section class="middle-column">
+                    <img src="image2.jpg" alt="Description of Image 2">
+                    <p>Hockey is more than just a game; it’s a thrilling blend of speed, skill, and strategy that captivates millions around the globe. From the crack of the puck on the stick to the roar of the crowd when a goal is scored, hockey offers an adrenaline rush that few sports can match.</p>
+                    <p>Originating in Canada in the 19th century, hockey has grown into a beloved sport with leagues and teams worldwide. The National Hockey League (NHL) showcases the best talent, with players demonstrating incredible agility and teamwork on the ice. Each game is a showcase of athleticism, where players navigate fast-paced plays, execute intricate passes, and showcase breathtaking shots.</p>
+                    <p>What makes hockey truly special is its sense of community. Fans rally together, donning their team colors and filling arenas with energy and excitement. The camaraderie extends beyond the rink, as players often form lifelong bonds with teammates and opponents alike.</p>     
+                    <p>Whether you’re a seasoned fan or a newcomer, hockey offers something for everyone. From youth leagues to professional games, the sport encourages participation, promotes teamwork, and fosters a passion for competition. So grab your skates, hit the ice, and experience the thrill of hockey firsthand!</p>
+                </section>
+        
+                <!-- Right column -->
+                <section class="right-column">
+                    <h3>Hockey Resources</h3>
+                    <p>Check out the latest stats, scores, and news about hockey teams!</p>
+                    <ul>
+                        <li><a href="https://www.nhl.com" target ="_blank">NHL Official Website</a></li>
+                        <li><a href="https://www.nhl.com/video/top-10-goals-of-the-season-6343787802112" target ="_blank">Top 10 Goals of the Season</a></li>
+                        <li><a href="https://www.nhl.com/schedule" target ="_blank">Upcoming Games</a></li>
+                    </ul>
+                </section>
+            </div>
         </article>
     
         <section>

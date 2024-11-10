@@ -1,0 +1,191 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 20px;
+}
+
+/* Header and Navigation Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+}
+
+header h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main Content Area */
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Left Column Layout */
+article {
+    flex: 1 1 60%;
+    margin-right: 20px;
+}
+
+/* Sidebar Layout */
+aside {
+    flex: 1 1 30%;
+    background-color: #e2e2e2;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+/* Newsletter Section */
+section {
+    margin-top: 20px;
+}
+
+section form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+section form input[type="email"] {
+    padding: 10px;
+    font-size: 1rem;
+    width: 250px;
+}
+
+section form button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1rem;
+}
+
+section form button:hover {
+    background-color: #444;
+}
+
+/* Sticky Sidebar */
+aside {
+    position: sticky;
+    top: 20px;
+}
+
+/* Two-column Flexbox Layout */
+.two-column {
+    display: flex;
+    gap: 20px;
+}
+
+.two-column .main-column {
+    flex: 2;
+}
+
+.two-column .sidebar {
+    flex: 1;
+    background-color: #e2e2e2;
+    padding: 1rem;
+}
+
+/* Three-column Layout */
+.three-column {
+    display: flex;
+    gap: 20px;
+}
+
+.three-column .main-column {
+    flex: 3;
+}
+
+.three-column .side-column {
+    flex: 1;
+    background-color: #e2e2e2;
+    padding: 1rem;
+}
+
+/* Image and Caption Styles */
+img {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+figcaption {
+    font-style: italic;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/* Form Layout with Flexbox */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+form input, form textarea, form select, form button {
+    padding: 10px;
+    font-size: 1rem;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form button {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+}
+
+form button:hover {
+    background-color: #444;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
